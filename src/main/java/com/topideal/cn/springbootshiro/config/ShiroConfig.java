@@ -25,6 +25,11 @@ import java.util.Properties;
 @Configuration
 public class ShiroConfig {
 
+    /**
+     * 解决无全权限的第一种方案，借助SimpleMappingExceptionResolver类的exceptionMappings属性，将未授权的请求跳转到提示未授权的页面，
+     * noAuth未授权页面提示
+      * @return
+     */
 //    @Bean
 //    public SimpleMappingExceptionResolver exceptionResolver(){
 //        SimpleMappingExceptionResolver resolver = new SimpleMappingExceptionResolver();
