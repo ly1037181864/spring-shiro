@@ -1,7 +1,6 @@
 package com.topideal.cn.springbootshiro.handler;
 
 import org.apache.shiro.authz.UnauthorizedException;
-import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -17,7 +16,6 @@ import java.io.IOException;
  * @create: 2020-02-13 11:21
  **/
 @ControllerAdvice
-@Order(-1)
 public class GlobalExceptionHandler {
 
     /**
